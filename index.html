@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>HexLife</title>
+    <meta charset="utf-8">
+    <style>
+        input { width: 25px;}
+
+    </style>
+</head>
+<body>
+    <label for="nrows">filas: <input id="nrows" type="text" value="20"></label>
+    <label for="ncols">columnas: <input id="ncols" type="text" value="12"></label>
+    <button id="refresh">refresh</button>
+    <br>
+    <label for="bl">min nacer: <input id="bl" type="text" value="2"></label>
+    <label for="bh">max nacer: <input id="bh" type="text" value="3"></label>
+    <br>
+    <label for="sl">min sobrevive: <input id="sl" type="text" value="3"></label>
+    <label for="sh">max sobrevive: <input id="sh" type="text" value="4"></label>
+    <br>
+    <a href="#" id="play">play</a>
+    <a href="#" id="step">step</a>
+    <a href="#" id="pause" style="display: none;">pause</a>
+    <br>
+    <label for="toroida">Toroidal: <input type="checkbox" id="toroidal" checked="true"></label>
+    <br>
+    <canvas id="canvas"></canvas>    
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="hexlife.js"></script>
+</body>
+</html>
